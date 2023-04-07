@@ -3,10 +3,11 @@
   "description": "A template of LMTechub projects for eslint",
   "version": "1.0.1",
   "scripts": {
-    "lint-css": "npx stylelint \"**/*.css\"",
+    "lint:css": "npx stylelint \"**/*.css\"",
     "fix-lint-css": "npx stylelint \"**/*.css\" --fix",
     "lint:html": "npx linthtml \"**/*.html\"",
-    "pre-commit": "npm run lint-css && npm run lint:html"
+    "lint:all": "npm run lint:html && npm run lint:css",
+    "pre-commit": "npm run lint:html && npm run lint:css"
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.4",
