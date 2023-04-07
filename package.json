@@ -1,0 +1,24 @@
+{
+  "name": "lmtechub",
+  "description": "Template for LMTechub",
+  "version": "1.0.1",
+  "scripts": {
+    "lint": "eslint --ext .html,.css ."
+  },
+  "lint-staged": {
+    "*.html": "npm run lint",
+    "*.css": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-html": "^7.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1"
+  }
+}

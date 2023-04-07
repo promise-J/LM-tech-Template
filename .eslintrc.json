@@ -1,0 +1,16 @@
+{
+    "plugins": [
+      "html",
+      "css-modules"
+    ],
+    "overrides": [
+      {
+        "files": ["*.html"],
+        "extends": ["plugin:html/recommended"]
+      },
+      {
+        "files": ["*.css"],
+        "extends": ["plugin:css-modules/recommended"]
+      }
+    ]
+  }
