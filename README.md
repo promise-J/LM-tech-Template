@@ -1,8 +1,7 @@
 ##This is a project template for LMTechub students.
 ##Few steps to get started
-- Clone the repository using "git clone <repo_link>"
+- Clone the repository in the created folder for your project using: "git clone <repo_link> ./"
 - Run rm -fr .git to destroy any previous git connection with the cloned remote repo
-- Copy all the content of the just clone folder above and paste them in your project folder
 - From the terminal in your project folder, run the command "npm install" (You should see a generated node_modules folder)
 - Follow the project layout in adding your HTML, CSS AND Images to the project
 - To test your lint check for HTML run "npm run lint:html"
